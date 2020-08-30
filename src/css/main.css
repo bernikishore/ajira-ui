@@ -103,6 +103,9 @@
   font-family: "k-icon";
   color: #444444;
 }
+.slick-slider .slick-arrow:hover:before {
+  color: #E10000;
+}
 .slick-slider .slick-arrow.slick-prev {
   left: 0;
 }
@@ -231,6 +234,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 .sidebar .side-close i {
   font-size: 20px;
