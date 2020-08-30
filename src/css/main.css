@@ -425,6 +425,10 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.footer-wrapper .social-links-wrap ul li a:hover {
+  background: #E10000;
+  color: #ffffff;
+}
 .footer-wrapper .social-links-wrap ul li a span {
   position: absolute;
   width: 1px;
