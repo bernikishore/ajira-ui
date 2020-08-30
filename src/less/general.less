@@ -1,0 +1,46 @@
+.data-transform{
+    color: #ffffff;
+    transition: color 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+.data-transform .content-txt{
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.data-transform .content-txt:before{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: attr(data-hover);
+    transform: translate3d(0,0,0);
+}
+.data-transform:hover .content-txt,
+.data-transform:focus .content-txt{
+    transform: translateY(-100%);
+}
+
+
+.slick-slider {
+    .slick-arrow {
+        &::before {
+            font-family: @icomoon-font-family;
+            color: @color-black;
+        }
+
+        &.slick-prev {
+            left: 0;
+            &:before {
+                content: @icon-chevron-left;
+            }
+        }
+
+        &.slick-next {
+            right: 0;
+            &:before {
+                content: @icon-chevron-right;
+            }
+        }
+    }
+}
