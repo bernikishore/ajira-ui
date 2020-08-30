@@ -1,0 +1,312 @@
+{
+    "contactInfo": {
+        "address": {
+            "addressHeading": "Our Corporate Office",
+            "address1": "No: 7,A2B road, Adayar Rajpuram,",
+            "address2": "T-Nagar, Chennai - 642002."
+        },
+        "email": "sales@madeup.com",
+        "phone": "044 9999 9999",
+        "mapMark": "icon-map-pin",
+        "mapText": "Locate Us"
+    },
+
+    "socialLinksInfo": [{
+        "heading": "Stay in touch with us",
+        "socialLinks": [
+            {
+                "icon": "icon-facebook",
+                "text": "Facebook",
+                "link": "#"
+            },
+            {
+                "icon": "icon-instagram",
+                "text": "Instagram",
+                "link": "#"
+            },
+            {
+                "icon": "icon-youtube",
+                "text": "Youtube",
+                "link": "#"
+            }
+        ]
+    }],
+
+    "footerLinks": [
+        {
+            "menu": "About Us",
+            "link": "about-us"
+        },
+        {
+            "menu": "Delivery Information",
+            "link": "#"
+        },
+        {
+            "menu": "Returns & Exchange",
+            "link": "#"
+        },
+        {
+            "menu": "Technical & Privacy Order Status",
+            "link": "#"
+        },
+        {
+            "menu": "Order Status",
+            "link": "#"
+        }
+    ],
+
+    "accountLinks": [
+        {
+            "text": "My Profile",
+            "link": "#"
+        },
+        {
+            "text": "My Wishlist",
+            "link": "#"
+        },
+        {
+            "text": "My Orders",
+            "link": "#"
+        },
+        {
+            "text": "My Addresses",
+            "link": "#"
+        }
+    ],
+
+    "extraLinks": [
+        {
+            "text": "The Brand",
+            "link": "#"
+        },
+        {
+            "text": "The made up Story",
+            "link": "#"
+        },
+        {
+            "text": "Franchise and Supplieds",
+            "link": "#"
+        },
+        {
+            "text": "Store Locator",
+            "link": "#"
+        }
+    ],
+
+    "Menu": [
+        {
+            "menu": "For Me",
+            "link": "#",
+            "image": "images/1.png"
+        },
+        {
+            "menu": "Jeans",
+            "link": "#",
+            "image": "images/2.png"
+        },
+        {
+            "menu": "Shirts",
+            "link": "#",
+            "image": "images/3.png"
+        },
+        {
+            "menu": "Shirts",
+            "link": "#",
+            "image": "images/4.png"
+        },
+        {
+            "menu": "Trousers",
+            "link": "#",
+            "image": "images/5.png"
+        },
+        {
+            "menu": "Joggers",
+            "link": "#",
+            "image": "images/1.png"
+        },
+        {
+            "menu": "Shorts",
+            "link": "#",
+            "image": "images/2.png"
+        }
+    ],
+    "headerIcons": {
+        "search": "icon-search",
+        "cart": "icon-shopping-cart",
+        "user": "icon-user",
+        "hamburger": "icon-menu"
+    },
+
+    "bannerInfo": [
+        {
+            "bannerBtnText": "Browse Collections",
+            "bannerBtnLink": "#",
+            "bannerImageBg": "images/banner-bg.png",
+            "bannerImageMd": "images/banner-md.png",
+            "bannerImageSm": "images/banner-sm.png",
+            "contentInfo": {
+                    "content1": "Clothes that <span>respire</span>",
+                    "content2": "for men who <span>aspire</span>"
+            }
+        }
+    ],
+
+    "latestCollections": [
+        {
+            "heading": "Latest Collections",
+            "prouctList": [
+                {
+                    "productImg": "images/product-1.png",
+                    "productName": "Printed Polo T-Shirt",
+                    "productLink": "#",
+                    "price": "₹1,499.00"
+                },
+                {
+                    "productImg": "images/product-2.png",
+                    "productName": "Printed Polo T-Shirt",
+                    "productLink": "#",
+                    "price": "₹1,499.00"
+                },
+                {
+                    "productImg": "images/product-1.png",
+                    "productName": "Printed Polo T-Shirt",
+                    "productLink": "#",
+                    "price": "₹1,499.00"
+                },
+                {
+                    "productImg": "images/product-2.png",
+                    "productName": "Printed Polo T-Shirt",
+                    "price": "₹1,499.00"
+                },
+                {
+                    "productImg": "images/product-1.png",
+                    "productName": "Printed Polo T-Shirt",
+                    "price": "₹1,499.00"
+                }
+            ]
+        }
+    ],
+    "newsletterInfo": {
+        "imageURL": "images/newsletter-bg.png",
+        "heading": "Get Coupons & Style Guides",
+        "subHeading": "Subscribe to our Newsletter",
+        "btnText": "Subscribe"
+    },
+
+    "promoBanner": {
+        "promoInfo1": {
+            "imageUrl": "images/promo-1.png",
+            "contentInfo": {
+                    "content1": "<span>Summer</span> is here and",
+                    "content2": "so is our <span>collection</span>"
+            }
+        },
+        "promoInfo2": {
+            "imageUrl": "images/promo-2.png",
+            "contentInfo": {
+                    "content1": "<span>SWrinkle-free</span>S t-shirts"
+            }
+        },
+        "promoInfo3": {
+            "imageUrl": "images/promo-3.png",
+            "contentInfo": {
+                    "content1": "<span>SStain-free</span>S denim shirts"
+            }
+        }
+    },
+    "reviewsInfo": [
+        {
+            "heading": "Testimonials",
+            "reviewsDetail": [
+                {
+                    "imageUrl": "images/user.png",
+                    "userName": "Vikas",
+                    "reviewsContent": "Love the cloth material! So breezy and comfortable. Really durable as well. I must say the jeans I bought was worth the price.",
+                    "ratings": [
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-o"
+                        },
+                        {
+                            "icon": "icon-star-o"
+                        }
+                    ]
+                },
+                {
+                    "imageUrl": "images/user.png",
+                    "userName": "Arun",
+                    "reviewsContent": "Love the cloth material! So breezy and comfortable. Really durable as well. I must say the jeans I bought was worth the price.",
+                    "ratings": [
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-o"
+                        }
+                    ]
+                },
+                {
+                    "imageUrl": "images/user.png",
+                    "userName": "Arun",
+                    "reviewsContent": "Love the cloth material! So breezy and comfortable. Really durable as well. I must say the jeans I bought was worth the price.",
+                    "ratings": [
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-o"
+                        }
+                    ]
+                },
+                {
+                    "imageUrl": "images/user.png",
+                    "userName": "Arun",
+                    "reviewsContent": "Love the cloth material! So breezy and comfortable. Really durable as well. I must say the jeans I bought was worth the price.",
+                    "ratings": [
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-fill"
+                        },
+                        {
+                            "icon": "icon-star-o"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
