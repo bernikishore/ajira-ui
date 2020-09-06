@@ -8,7 +8,7 @@ export default class Banner extends Component {
           width: window.innerWidth,
         };
       }
-      componentDidMount() {
+      componentWillUnmount() {
         window.addEventListener('resize', this.handleWindowSizeChange);
       }
 

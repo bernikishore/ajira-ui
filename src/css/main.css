@@ -118,6 +118,29 @@
 .slick-slider .slick-arrow.slick-next:before {
   content: "\e90c";
 }
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+input[type="datetime"],
+input[type="email"] {
+  height: 45px;
+  border: 1px solid #D1D1D1;
+  width: 100%;
+  padding: 7px 15px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="datetime"]:focus,
+input[type="email"]:focus {
+  border-color: #333333;
+}
 @font-face {
   font-family: 'BankGothic';
   src: url('../fonts/BankGothic.eot');
@@ -159,6 +182,27 @@ a {
 a:hover {
   color: #E10000;
 }
+.page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+.page-header,
+.page-footer,
+.page-main {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+.page-footer {
+  margin-top: auto;
+}
 .container {
   width: 95%;
   margin-left: auto;
@@ -181,7 +225,7 @@ a:hover {
   color: #ffffff;
   font-size: 20px;
 }
-.sidebar {
+.account-sidebar {
   width: 300px;
   position: fixed;
   background: #ffffff;
@@ -205,7 +249,7 @@ a:hover {
   overflow-y: auto;
   padding: 20px;
 }
-.sidebar ul {
+.account-sidebar ul {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -213,13 +257,13 @@ a:hover {
   text-align: center;
   padding: 50px 0;
 }
-.sidebar ul li {
+.account-sidebar ul li {
   margin: 10px 0;
 }
-.sidebar ul + ul {
+.account-sidebar ul + ul {
   border-top: 1px solid #DDDDDD;
 }
-.sidebar .side-close {
+.account-sidebar .side-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -236,13 +280,13 @@ a:hover {
           justify-content: center;
   cursor: pointer;
 }
-.sidebar .side-close i {
+.account-sidebar .side-close i {
   font-size: 20px;
 }
 .sidebar-opened {
   overflow: hidden;
 }
-.sidebar-opened .sidebar {
+.sidebar-opened .account-sidebar {
   right: 0;
 }
 .page-header .header-inner {
@@ -267,6 +311,10 @@ a:hover {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 60%;
           flex: 0 0 60%;
+}
+.page-header .navigation .slick-slide .content-txt {
+  -webkit-transform: none;
+          transform: none;
 }
 .page-header .navigation .nav-link {
   color: #444444;
@@ -720,6 +768,310 @@ a:hover {
   left: -20px;
   top: -20px;
 }
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0;
+}
+.columns .sidebar-menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 5px;
+}
+.columns .column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+.not-found-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.account .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.account .user-info .avatar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 72px;
+          flex: 0 0 72px;
+  max-width: 72px;
+}
+.account .user-info .user-detail {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 72px);
+          flex: 0 0 calc(100% - 72px);
+  max-width: calc(100% - 72px);
+  margin-left: 20px;
+}
+.account .user-info .user-detail .user-name {
+  color: #333333;
+  font-size: 16px;
+}
+.account .user-info .user-detail .user-email {
+  color: #9B9B9B;
+  font-size: 14px;
+}
+.account .dashboard-content .menu-link,
+.account .account-menu .menu-link {
+  padding: 15px 50px 15px 0;
+  border-bottom: 1px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.account .dashboard-content .menu-link.active,
+.account .account-menu .menu-link.active,
+.account .dashboard-content .menu-link:hover,
+.account .account-menu .menu-link:hover {
+  border-bottom-color: #000000;
+}
+.account .dashboard-content .menu-link span,
+.account .account-menu .menu-link span {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 30px);
+          flex: 0 0 calc(100% - 30px);
+  max-width: calc(100% - 30px);
+}
+.account .dashboard-content .menu-link .item-icon,
+.account .account-menu .menu-link .item-icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+  max-width: 30px;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  top: -12px;
+  color: #333333;
+}
+.account .dashboard-content .menu-link .item-text,
+.account .account-menu .menu-link .item-text {
+  font-weight: 600;
+  color: #222222;
+  font-size: 16px;
+  display: block;
+}
+.account .dashboard-content .menu-link .item-badge,
+.account .account-menu .menu-link .item-badge {
+  color: #9B9B9B;
+  font-size: 11px;
+  display: block;
+}
+.account .dashboard-content .menu-link.active .item-icon:before {
+  content: "\e90d";
+}
+.account .fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.account .fieldset .field {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+.account .fieldset .field label {
+  display: none;
+}
+.account .fieldset .actions {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.account .fieldset .actions .action {
+  background: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.account .with-bor {
+  padding: 40px;
+  border: 1px solid #333333;
+}
+.account .page-title {
+  font-size: 34px;
+  color: #333333;
+  margin: 0 0 30px;
+  font-weight: normal;
+  line-height: normal;
+}
+.account .profile-sec .profile-edit .fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.account .profile-sec .profile-edit .fieldset .field {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+.account .profile-sec .profile-edit .fieldset .field:nth-child(n + 3) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+.account .orders-sec {
+  padding: 30px;
+}
+.account .orders-sec .order-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #DDDDDD;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.account .orders-sec .order-row + .order-row {
+  margin-top: 10px;
+}
+.account .orders-sec .order-row .product-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+  max-width: 100px;
+  background: #DDDDDD;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.account .orders-sec .order-row .product-detail-wrap {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 100px);
+          flex: 0 0 calc(100% - 100px);
+  max-width: calc(100% - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.account .orders-sec .order-row .more {
+  text-align: right;
+}
+.account .orders-sec .order-row .product-info {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.account .orders-sec .order-row .order-no {
+  color: #777777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.account .orders-sec .order-row .product-name {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.account .orders-sec .order-row .delivery-date {
+  color: #777777;
+  font-size: 14px;
+}
+.account .orders-sec .order-row .product-price {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+}
+.account .orders-sec .order-row .payment-type {
+  color: #777777;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.account .orders-sec .order-row .icon {
+  text-align: right;
+}
+.account .orders-sec .order-row .order-status {
+  padding: 5px 10px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+.account .orders-sec .order-row .order-status.pending {
+  background: #333333;
+}
+.account .orders-sec .order-row .order-status.delivered {
+  background: #F3F3F3;
+  color: #777777;
+}
 @media screen and (min-width: 776px) {
   .page-header .icons-sec {
     -webkit-box-ordinal-group: 4;
@@ -731,6 +1083,37 @@ a:hover {
   }
   .banner-blk {
     min-height: 680px;
+  }
+  .columns .sidebar-menu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333333%;
+            flex: 0 0 33.33333333%;
+    max-width: 66.66666667%;
+    padding-right: 5px;
+  }
+  .columns .column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66666667%;
+            flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
+  }
+  .account .dashboard-content .menu-link {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .columns .sidebar-menu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 300px;
+            flex: 0 0 300px;
+    max-width: 300px;
+    padding-right: 5px;
+  }
+  .columns .column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 300px);
+            flex: 0 0 calc(100% - 300px);
+    max-width: calc(100% - 300px);
   }
 }
 @media screen and (max-width: 992px) {
@@ -828,5 +1211,42 @@ a:hover {
   }
   .reviews-section .review-item {
     padding: 30px 20px;
+  }
+  .account .account-menu {
+    display: none;
+  }
+  .account .with-bor {
+    padding: 20px;
+    border: none;
+  }
+  .account .page-title {
+    display: none;
+  }
+  .account .profile-sec .profile-edit .fieldset .field {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .account .orders-sec .order-row .payment-type,
+  .account .orders-sec .order-row .product-price,
+  .account .orders-sec .order-row .delivery-date,
+  .account .orders-sec .order-row .order-no {
+    font-size: 11px;
+  }
+  .account .orders-sec .order-row .product-name {
+    font-size: 12px;
+  }
+  .account .orders-sec .order-row .product-img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75px;
+            flex: 0 0 75px;
+    max-width: 75px;
+  }
+  .account .orders-sec .order-row .product-detail-wrap {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 75px);
+            flex: 0 0 calc(100% - 75px);
+    max-width: calc(100% - 75px);
   }
 }
