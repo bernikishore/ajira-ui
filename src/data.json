@@ -35,7 +35,7 @@
     "footerLinks": [
         {
             "menu": "About Us",
-            "link": "about-us"
+            "link": "#"
         },
         {
             "menu": "Delivery Information",
@@ -58,7 +58,7 @@
     "accountLinks": [
         {
             "text": "My Profile",
-            "link": "#"
+            "link": "/account/profile"
         },
         {
             "text": "My Wishlist",
@@ -66,11 +66,32 @@
         },
         {
             "text": "My Orders",
-            "link": "#"
+            "link": "/account/orders"
         },
         {
             "text": "My Addresses",
-            "link": "#"
+            "link": "/account/shipping-address"
+        }
+    ],
+
+    "accountMenu": [
+        {
+            "text": "My Profile",
+            "subText": "Notifications, password",
+            "link": "/account/profile",
+            "component":"MyProfile"
+        },
+        {
+            "text": "My Orders",
+            "subText": "Already have 12 orders",
+            "link": "/account/orders",
+            "component":"MyOrders"
+        },
+        {
+            "text": "Shipping addresses",
+            "subText": "3 addresses",
+            "link": "/account/shipping-address",
+            "component":"ShippingAddress"
         }
     ],
 
@@ -84,7 +105,7 @@
             "link": "#"
         },
         {
-            "text": "Franchise and Supplieds",
+            "text": "Franchise and Supplies",
             "link": "#"
         },
         {
@@ -308,5 +329,66 @@
                 }
             ]
         }
+    ],
+    "userData": {
+        "userAvatar": "images/user-img.png",
+        "userName": "Grishk",
+        "userEmail": "griiskaim@gmail.com"
+    },
+    "orderDetail":[
+        {
+            "heading": "My Orders",
+            "orderInfo": [
+                {
+                    "orderNo": 12345678,
+                    "productImg": "images/product.png",
+                    "productName": "Madeup White Cotton Blend Checkered Slim Fit Shirt",
+                    "price": "₹1,499.00",
+                    "deliveryDate": "sat, Aug 30",
+                    "orderStatusInfo": {
+                        "orderStatus": "Pending",
+                        "orderClass": "order-status pending"
+                    },
+                    "paymentMode": "Credit Card Payment"
+                },
+                {
+                    "orderNo": 12345680,
+                    "productImg": "images/product.png",
+                    "productName": "Madeup White Cotton Blend Checkered Slim Fit Shirt",
+                    "price": "₹1,509.00",
+                    "deliveryDate": "sat, Aug 30",
+                    "orderStatusInfo": {
+                        "orderStatus": "Delivered",
+                        "orderClass": "order-status delivered"
+                    },
+                    "paymentMode": "Credit Card Payment"
+                },
+                {
+                    "orderNo": 12345680,
+                    "productImg": "images/product.png",
+                    "productName": "Madeup White Cotton Blend Checkered Slim Fit Shirt",
+                    "price": "₹1,509.00",
+                    "deliveryDate": "sat, Aug 30",
+                    "orderStatusInfo": {
+                        "orderStatus": "Delivered",
+                        "orderClass": "order-status delivered"
+                    },
+                    "paymentMode": "Credit Card Payment"
+                },
+                {
+                    "orderNo": 12345680,
+                    "productImg": "images/product.png",
+                    "productName": "Madeup White Cotton Blend Checkered Slim Fit Shirt",
+                    "price": "₹1,509.00",
+                    "deliveryDate": "sat, Aug 30",
+                    "orderStatusInfo": {
+                        "orderStatus": "Delivered",
+                        "orderClass": "order-status delivered"
+                    },
+                    "paymentMode": "Credit Card Payment"
+                }
+            ]
+        }
     ]
 }
+

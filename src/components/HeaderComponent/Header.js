@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import Logo from '../Logo';
 import Menu from './Menu';
 import HeaderIcons from './HeaderIcons';
@@ -26,7 +27,9 @@ export default class Header extends Component{
             <header className="page-header">
                 <div className="container">
                     <div className="header-inner">
-                        <Logo/>
+                        <Link to="/">
+                            <Logo/>
+                        </Link>
                         <HeaderIcons/>
                         <Menu/>
                     </div>

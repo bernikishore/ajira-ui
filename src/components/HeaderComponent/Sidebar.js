@@ -9,13 +9,13 @@ export default class Sidebar extends Component {
     }
     render() {
         return (
-            <aside className="sidebar">
+            <div className="account-sidebar">
                 <span className="side-close" onClick={this.sidebarClose}>
                     <i className="icon-x"></i>
                 </span>
                 <AccountLinks/>
                 <ExtraLinks/>
-            </aside>
+            </div>
         )
     }
 }
