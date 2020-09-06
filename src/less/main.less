@@ -119,6 +119,11 @@ a {
     margin-right: auto;
 }
 
+
+.page-header{
+    border-bottom: 1px solid #DDDDDD;
+}
+
 .logo {
     background: @color-red;
     width: 100px;
@@ -703,6 +708,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 50px 0;
+
+    h3 {
+        font-size: 60px;
+        text-align: center;
+        margin: 0;
+        span {
+            display: block;
+            font-size: 14px;
+        }
+    }
 }
 
 .account {
@@ -1031,11 +1047,21 @@ a {
 
 @media screen and (max-width: 775px) {
 
+    .home-page {
+        .page-header {
+            .navigation {
+                display: block;
+                border-top: 1px solid #dddddd;
+            }
+        }
+    }
+
     .page-header {
         .navigation {
+            display: none;
             max-width: 100%;
             flex: 0 0 100%;
-            margin: 10px 0;
+            padding: 10px 0;
             .nav-link {
                 text-align: center;
                 .cat-image {
