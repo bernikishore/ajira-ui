@@ -292,6 +292,9 @@ a:hover {
 .sidebar-opened .account-sidebar {
   right: 0;
 }
+.home-page .page-header {
+  border-bottom: none;
+}
 .page-header .header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,7 +539,7 @@ a:hover {
   margin-top: 20px;
 }
 .latest-collections {
-  margin: 50px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 .latest-collections .slick-slider .slick-list {
@@ -1088,6 +1091,19 @@ a:hover {
   color: #777777;
 }
 @media screen and (min-width: 776px) {
+  .page-header {
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .page-header.scroll-down {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
   .page-header .icons-sec {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -1098,6 +1114,9 @@ a:hover {
   }
   .banner-blk {
     min-height: 680px;
+  }
+  .main-content {
+    margin-top: 70px;
   }
   .columns .sidebar-menu {
     -webkit-box-flex: 0;

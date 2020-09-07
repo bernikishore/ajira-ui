@@ -20,16 +20,14 @@ export default class LatestCollections extends Component {
                 breakpoint: 1024,
                 settings: {
                   slidesToShow: 4,
-                  slidesToScroll: 3,
-                  dots: true
+                  slidesToScroll: 3
                 }
               },
               {
                 breakpoint: 776,
                 settings: {
                   slidesToShow: 3,
-                  slidesToScroll: 2,
-                  dots: true
+                  slidesToScroll: 2
                 }
               },
               {

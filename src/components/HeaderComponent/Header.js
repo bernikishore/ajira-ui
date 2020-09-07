@@ -7,40 +7,45 @@ import HeaderIcons from './HeaderIcons';
 import Sidebar from './Sidebar';
 
 export default class Header extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            width: window.innerWidth
-        }
-    }
     componentDidMount(){
-        window.addEventListener('resize', this.handleWindowSizechange);
-     }
+        const header = document.querySelector('.page-header');
+        const scrollUp = 'scroll-up';
+        const scrollDown = 'scroll-down';
+        let lastScroll = 0;
 
-    handleWindowSizechange = () => {
-        this.setState({ width: window.innerWidth })
+        window.addEventListener('scroll', ()=> {
+            const currentScroll = window.pageYOffset;
+
+            if(currentScroll === 0) {
+                header.classList.remove(scrollUp);
+                header.classList.remove(scrollDown);
+                return;
+            }
+
+            if(currentScroll > lastScroll && !header.classList.contains(scrollDown)) {
+                header.classList.remove(scrollUp);
+                header.classList.add(scrollDown);
+            } else if(currentScroll < lastScroll && header.classList.contains(scrollDown)){
+                header.classList.remove(scrollDown);
+                header.classList.add(scrollUp)
+            }
+
+            lastScroll = currentScroll;
+        })
     }
     render(){
-        const { width } = this.state;
-        const isTab  = width <= 775;
         return (
             <header className="page-header">
                 <div className="container">
                     <div className="header-inner">
-                        <Link to="/">
+                        <Link to="/" tabIndex="-1">
                             <Logo/>
                         </Link>
                         <HeaderIcons/>
                         <Menu/>
                     </div>
                 </div>
-                {(() => {
-                        if(isTab) {
-                        return (
-                            <Sidebar/>
-                        )
-                    }
-                })()}
+                <Sidebar/>
             </header>
         )
     }

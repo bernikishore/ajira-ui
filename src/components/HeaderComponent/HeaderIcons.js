@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink } from "react-router-dom";
 import data from '../../data.json';
 
 export default class HeaderIcons extends Component {
@@ -42,7 +41,7 @@ export default class HeaderIcons extends Component {
                         } else {
                             return (
                                 <li>
-                                    <NavLink to="/account/profile"><span className={data.headerIcons.user}></span></NavLink>
+                                    <span onClick={this.handleDetail} className={data.headerIcons.user}></span>
                                 </li>
                             )
                         }
