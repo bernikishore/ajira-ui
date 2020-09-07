@@ -197,6 +197,12 @@ a {
     }
 }
 
+.home-page {
+    .page-header {
+        border-bottom: none;
+    }
+}
+
 .page-header {
     .header-inner {
         display: flex;
@@ -423,7 +429,7 @@ a {
 }
 
 .latest-collections {
-    margin: 50px 0;
+    padding: 50px 0;
     overflow: hidden;
     .slick-slider {
         .slick-list {
@@ -948,12 +954,14 @@ a {
                 font-size: 20px;
                 color: #333333;
                 font-weight: 500;
+                text-align: right;
             }
 
             .payment-type {
                 color: #777777;
                 font-size: 14px;
                 margin-bottom: 5px;
+                text-align: right;
             }
 
             .icon {
@@ -982,6 +990,17 @@ a {
 
 @media screen and (min-width: 776px) {
     .page-header {
+        background: #ffffff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        transition: all .3s ease;
+
+        &.scroll-down {
+            transform: translateY(-100%);
+        }
+
         .icons-sec {
             order: 3;
         }
@@ -995,6 +1014,10 @@ a {
 
     .banner-blk {
         min-height: 680px;
+    }
+
+    .main-content {
+        margin-top: 70px;
     }
 
     .columns {
